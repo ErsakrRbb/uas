@@ -1,5 +1,6 @@
 # TUGAS AKHIR MATA KULIAH DATABASE BERBASIS WEB
-![logo_unsyiah-removebg-preview](https://github.com/ErsakrRbb/uas/assets/133791674/8373ae95-624d-4f8d-b7e6-bfcecd398aba)
+![image](https://github.com/ErsakrRbb/uas/assets/133791674/9f01631b-8fa2-42e7-8554-a2eed37d7988)
+
 
 # NAMA ANGGOTA KELOMPOK :
 1. ERSA KISTHI RAHMAYANI (2108001010002)
