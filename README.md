@@ -1,5 +1,5 @@
 # TUGAS AKHIR MATA KULIAH DATABASE BERBASIS WEB
-![image](https://github.com/ErsakrRbb/uas/assets/133791674/e6b370a4-d049-49ba-94da-e80e5b479ed9)
+![logo_unsyiah-removebg-preview](https://github.com/ErsakrRbb/uas/assets/133791674/33331744-705f-43f2-951f-3b27132d625e)
 # NAMA ANGGOTA KELOMPOK :
 1. ERSA KISTHI RAHMAYANI (2108001010002)
 2. SALWA HASHIFAH SHABRINA (2108001010002)
