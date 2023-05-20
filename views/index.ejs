@@ -1,0 +1,121 @@
+<head>
+    <title>Halaman index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #link{
+            display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+        }
+        .itm-title {
+  width: 150px;
+}
+    </style>
+</head>
+<!-- component -->
+<script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+<body>
+    <div class="container">
+        <a href="/movies/tambah">tambah</a>
+        <!-- Table -->
+        <div class="w-full max-w-10xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+
+                      
+<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <span class="sr-only">Open sidebar</span>
+    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+       <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+    </svg>
+ </button>
+ 
+ <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+       <ul class="space-y-2 font-medium">
+          <li>
+             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                <span class="ml-3">Dashboard</span>
+             </a>
+          </li>
+          <li>
+             <a href="/movies/tambah" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap">Tambah data</span>
+                <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300"></span>
+             </a>
+          </li>
+       </ul>
+    </div>
+ </aside>
+ 
+ <div class="p-4 sm:ml-64">
+    <div class="p-4 rounded-lg dark:border-gray-700">
+        <table class="table-auto w-full">
+            
+            <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                <tr>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">nama</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">genre</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">years</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">runtime</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">description</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">viewrs</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-left">poster</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-center">video</div>
+                    </th>
+                    <th class="p-2">
+                        <div class="font-semibold text-center">aksi</div>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody class="text-sm divide-y divide-gray-100">
+         
+        <% movies.forEach(item=> {%>
+            <tr>
+                <td class="p-2"><%= item.nama %></td>
+                <td><%= item.genre %></td>
+                <td><%= item.years %></td>
+                <td><%= item.runtime %></td>
+                <td><%= item.description %></td>
+                <td><%= item.viewrs %></td>
+                <td><%= item.poster %></td>
+                <td>
+                    <div class="itm-title">
+                        <a id="link" href="<%= item.video %>" target="_blank"><%= item.video %></a>
+                    </div>
+                </td>
+                <td class="p-2">    
+                       <form action="/movies/<%= item._id %>/destroy" method="post">
+                            <button type="submit">hapus</button>
+                       </form>
+                       <a href="/movies/<%= item._id %>" class="pl-5">edit</a>
+                    
+                </td>
+            </tr>
+            <% }) %>
+
+        </tbody>
+    </table>
+    </div></div>
+    </div>
+ </div>
+ 
+                       
+</body>
